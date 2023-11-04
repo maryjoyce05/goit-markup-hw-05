@@ -22,7 +22,7 @@
           ><span class="header-studio">STUDIO</span>
         </a>
         <ul class="link">
-          <li><a href="studio.html" class="link-list">Studio</a></li>
+          <li><a href="index.html" class="link-list active">Studio</a></li>
           <li><a href="portfolio.html" class="link-list">Portfolio</a></li>
           <li><a href="Contacts" class="link-list">Contacts</a></li>
         </ul>
@@ -42,7 +42,14 @@
           Effective Solutions<br />
           for Your Business
         </h1>
-        <button type="button" class="main-btn">Order Service</button>
+        <button type="button" class="main-btn" data-modal-open>
+          Order Service
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close-btn" data-modal-close>&times;</button>
+          </div>
+        </div>
       </section>
       <section class="policy-section">
         <ul class="link">
@@ -368,5 +375,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
